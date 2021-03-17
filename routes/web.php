@@ -18,4 +18,4 @@ Route::get('/', function () {
 });
 
 // creo una nuova rotta che rimanda al metodo index del controller CarsController
-Route::get('/cars', 'CarsController@index');
+Route::get('/cars/{id?}', 'CarsController@index');
