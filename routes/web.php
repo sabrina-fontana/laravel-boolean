@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+// creo una nuova rotta che rimanda al metodo index del controller CarsController
+Route::get('/cars', 'CarsController@index');
